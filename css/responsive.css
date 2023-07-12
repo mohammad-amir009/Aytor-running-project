@@ -1,0 +1,125 @@
+/* xxl */
+@media (min-width:1400px){
+    #banner .slick-dots{
+        position: absolute;
+        top: 70%;
+        left: 6%;
+    }
+
+    }
+    
+
+
+/* xl */
+@media (min-width:1200px)and(max-width:1399){
+    #banner .slick-dots{
+        position: absolute;
+        top: 70%;
+        left: 4%;
+    }
+
+    #banner .banner_slide h2{
+        font-size: 58px;
+        margin-top: 2px;
+        
+     }
+
+}
+
+
+/* lg */
+        @media (min-width:992px) and (max-width:1199px){
+            #banner .slick-dots{
+                position: absolute;
+                top: 72%;
+                left: 7%;
+            }
+
+            #banner .banner_slide h2{
+                font-size: 52px;
+                margin-top: 2px;
+                
+             }
+             #banner .banner_slide a{
+                margin-top: 20px;
+             }
+        } 
+
+
+
+
+
+        /* md */
+        @media (min-width:768px) and (max-width:991px){
+            #banner .slick-dots{
+                position: absolute;
+                top: 69%;
+                left: 9%;
+                margin-top: 10px;
+            }
+
+            #banner .banner_slide h2{
+                font-size: 50px;
+                margin-top: 2px;
+                
+             }
+
+             #banner .banner_slide{
+                height: 700px;
+             }
+        } 
+
+
+        /* sm */
+        @media (min-width:576px) and (max-width:767px){
+            #banner .slick-dots{
+                display: none !important;
+             }
+
+             #banner .banner_slide{
+                height: 500px;
+             }
+
+             #banner .banner_slide h2{
+                font-size: 45px;
+                margin-top: -4px;
+                
+             }
+
+             #banner .banner_slide p{
+                display: none !important;
+             }
+
+             #banner .banner_slide a{
+                margin-top: 15px;
+             }
+             
+             
+        } 
+
+
+    /* none */
+        @media  (max-width:575px){
+            #banner .slick-dots{
+                display: none !important;
+             }
+
+             #banner .banner_slide{
+                height: 400px;
+             }
+
+             #banner .banner_slide h2{
+                font-size: 30px;
+                margin-top: -14px;
+             }
+
+             #banner .banner_slide p{
+                display: none !important;
+             }
+
+             #banner .banner_slide a{
+                transform: scale(.8);
+                font-size: 17px;
+                left: -9px;
+             }
+        } 

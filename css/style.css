@@ -1,0 +1,816 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Roboto&display=swap');
+
+:root {
+    --primaryFont: 'Josefin Sans', sans-serif;
+    --secondaryFont: 'Roboto', sans-serif;
+    --primaryColor: #FF6F61;
+    --black100: #11161E;
+    --black200: #1D1D1D;
+    --black300: #151A32;
+}
+
+
+/* common css starts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul,
+ol,
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+span {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* common css ends */
+
+
+/* nav starts */
+
+
+.myNavbarLg .menus li a {
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    display: inline-block;
+    margin: 0 15px;
+    color: var(--black100);
+    position: relative;
+}
+
+
+.myNavbarLg .menus li a.active {
+    color: var(--primaryColor);
+}
+
+.myNavbarLg .menus li ul {
+    position: absolute;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-top: 4px solid var(--primaryColor);
+    margin-top: 30px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.25s ease;
+
+}
+
+.myNavbarLg .menus li:hover ul {
+    opacity: 1;
+    visibility: visible;
+    margin-top: 10px;
+}
+
+.myNavbarLg .menus li:hover>a {
+    color: var(--primaryColor);
+}
+
+.myNavbarLg .menus li a span {
+    transform: translateY(-50%);
+    display: block;
+    position: absolute;
+    right: -10px;
+    transform: translateY(-45%) rotate(0deg);
+    top: 50%;
+}
+
+.myNavbarLg .menus li:hover a span {
+    transform: translateY(-60%) rotate(180deg);
+
+}
+
+.myNavbarLg .menus li ul li a {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    padding: 10px 10px !important;
+
+}
+
+.myNavbarLg .menus li ul li:last-child a {
+    border-bottom: none;
+}
+
+.myNavbarLg .iconsGroup ul li {
+    display: inline-block;
+    position: relative;
+    margin: 0 10px;
+
+}
+
+.myNavSm .iconsGroup ul li span,
+.myNavbarLg .iconsGroup ul li span,
+.myNavbarLg .iconsGroup ul li a {
+    color: var(--black300);
+    font-size: 18px;
+}
+
+.myNavbarLg .iconsGroup ul li a span {
+    width: 14px;
+    height: 14px;
+    line-height: 14px;
+    text-align: center;
+    color: white;
+    background-color: var(--primaryColor);
+    text-align: center;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 11px;
+    position: absolute;
+    top: 4px;
+    right: -8px;
+}
+
+
+/* myNavSm starts */
+.myNavSm .logo {
+    text-align: center;
+}
+
+.myNavSm .iconsGroup ul {
+    text-align: right;
+}
+
+
+.myNavSm .menu .HamMenu {
+    color: var(--black300);
+}
+
+/* myNavSm ends */
+
+/* nav ends */
+
+
+
+
+/* banner starts */
+
+
+
+#banner .banner_slide {
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner .banner_slide h6 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+#banner .banner_slide h2 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 74px;
+    color: var(--black200);
+    margin-top: 10px;
+}
+
+#banner .banner_slide p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--black200);
+
+}
+
+#banner .banner_slide a {
+    padding: 10px 45px 10px 40px;
+    color: white;
+    background-color: var(--primaryColor);
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+#banner .banner_slide a span {
+    position: absolute;
+    top: 13px;
+    left: 135px;
+
+}
+
+#banner .slick-dots {
+    position: absolute;
+    top: 70%;
+    left: 4%;
+}
+
+
+#banner .slick-dots li {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+#banner .slick-dots li button {
+    width: 20px;
+    height: 10px;
+    background-color: white;
+    border-radius: 15px;
+    display: inline-block;
+    color: transparent;
+    border: none;
+    transition: .5s;
+
+}
+
+
+#banner .slick-dots .slick-active button {
+    width: 40px;
+    background-color: var(--primaryColor);
+    transition: .5s;
+}
+
+/* banner ends */
+
+
+/* ad section starts */
+
+#ad {
+    height: 624px;
+    margin: 80px 0px;
+}
+
+#ad .first_Image {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+#ad .first_Image img {
+    width: 100%;
+    height: 100%;
+}
+
+#ad .overlay_1 {
+    background-color: #1d1d1d89;
+    position: absolute;
+    text-align: center;
+    inset: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s;
+
+
+}
+
+#ad .overlay_1 h4 {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#ad .overlay_1 a {
+    color: white;
+    position: relative;
+}
+
+#ad .overlay_1 a span {
+    position: absolute;
+    right: -22px;
+
+}
+
+
+#ad .second_Image {
+    position: relative;
+}
+
+#ad .second_Image img {
+    width: 100%;
+    height: 100%;
+}
+
+#ad .overlay_2 {
+    background-color: #1d1d1d89;
+    position: absolute;
+    text-align: center;
+    inset: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s;
+
+}
+
+#ad .overlay_2 h4 {
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+#ad .overlay_2 a {
+    color: white;
+    position: relative;
+}
+
+#ad .overlay_2 a span {
+    position: absolute;
+    right: -22px;
+
+}
+
+#ad .third_Image {
+    position: relative;
+}
+
+#ad .third_Image img {
+    width: 100%;
+    height: 100%;
+}
+
+#ad .overlay_3 {
+    background-color: #1d1d1d89;
+    position: absolute;
+    text-align: center;
+    inset: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .25s;
+
+}
+
+#ad .overlay_3 h4 {
+    color: white;
+    margin-top: 220px;
+    margin-bottom: 20px;
+}
+
+#ad .overlay_3 a {
+    color: white;
+    position: relative;
+}
+
+#ad .overlay_3 a span {
+    position: absolute;
+    right: -22px;
+
+}
+
+#ad .first_Image:hover .overlay_1 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ad .second_Image:hover .overlay_2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+#ad .third_Image:hover .overlay_3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* ad section ends */
+
+
+/* new product section starts */
+
+#newProduct {
+    margin: 100px 0;
+    position: relative;
+}
+
+.slick-track {
+    padding: 1px 0;
+}
+
+#newProduct .arrows .leftArrow,
+#newProduct .arrows .rightArrow {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    line-height: 30px;
+    background-color: #151A32;
+    opacity: 0.9;
+    top: 55%;
+    z-index: 10;
+    color: white;
+}
+
+#newProduct .arrows .leftArrow {
+    left: 20%;
+}
+
+#newProduct .arrows .rightArrow {
+    right: 20%;
+}
+
+#newProduct h2 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #11161E;
+    transform: translateY(-50%);
+}
+
+.productCard {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    margin: 0px 10px;
+}
+
+
+
+.productCard .productImg {
+    width: 100%;
+    height: 310px;
+    position: relative;
+
+
+}
+
+.productCard .productImg img {
+    width: 100%;
+    height: 100%;
+}
+
+.productCard .productImg .discount {
+    background-color: var(--primaryColor);
+    display: inline-block;
+    position: absolute;
+    top: 13px;
+    left: 11px;
+    transform: rotate(-90deg);
+    border-radius: 15px 0 0 15px;
+    width: 52px;
+    height: 26px;
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+
+
+}
+
+
+.productCard .productImg .quickActions {
+
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+.productCard .productImg .quickActions ul li a {
+    background-color: white;
+    color: var(--black200);
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--black300);
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: .25s;
+    position: relative;
+}
+
+.productCard .productImg .quickActions ul li:hover a {
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+
+.productCard .productImg .quickActions ul li a .pops {
+    width: 20ch;
+    max-width: 110px;
+    height: 35px;
+    background-color: black;
+    position: absolute;
+    right: 46px;
+    top: 0;
+    z-index: 9;
+    border-radius: 6px;
+    opacity: 0;
+    visibility: 0;
+    transition: .25s;
+}
+
+.productCard .productImg .quickActions ul li a .pops p {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF
+}
+
+.productCard .productImg .quickActions ul li a .pops::after {
+    content: '';
+    width: 15px;
+    height: 15px;
+    right: -3px;
+    top: 10px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: black;
+
+}
+
+.productCard .productImg .quickActions ul li:hover a .pops {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.productCard .productDetails {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #444444;
+    text-align: center;
+
+}
+
+.productCard .productDetails p {
+    margin-top: 30px;
+}
+
+.productCard .productDetails p del {
+    margin-left: 3px;
+    display: inline-block;
+    color: #BDBDBD;
+}
+
+.productCard .productDetails h6 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #11161E;
+}
+
+.productCard .productDetails span {
+
+    color: var(--primaryColor);
+    border-radius: .3px;
+    margin: 5px 0 20px 0;
+    display: inline-block;
+}
+
+/* new product section ends */
+
+
+/* discount section starts */
+
+#discount {
+    background: #151A32;
+    opacity: 0.5;
+
+}
+
+#discount h2 {
+    color: #ffffff;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 60px;
+    padding-top: 100px;
+}
+
+#discount p {
+    color: #ffffffd4;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#discount a {
+    padding: 10px 45px 10px 40px;
+    color: white;
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    height: 50px;
+    line-height: 33px;
+    text-align: center;
+    position: relative;
+    margin-top: 5px;
+    display: inline-block;
+    border: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+#discount a span {
+    position: absolute;
+    top: 13px;
+    left: 135px;
+}
+
+
+
+/* discount section ends */
+
+
+/* best Seller Product starts */
+
+#bestSeller {
+    margin: 100px 0;
+}
+
+#bestSeller h2 {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    color: #11161E;
+    transform: translateY(-50%);
+}
+
+#bestSeller .productSlider {
+    margin-bottom: 25px;
+}
+
+#bestSeller .button {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+#bestSeller .button a {
+    padding: 10px 45px 10px 40px;
+    font-family: 'Josefin Sans';
+    color: white;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    height: 50px;
+    line-height: 33px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    border: 1px solid white;
+    background-color: var(--primaryColor);
+}
+
+#bestSeller .button span {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+
+
+}
+
+/* best Seller Product ENDs */
+
+/* deals section starts */
+
+#deals h2 {
+    color: #11161E;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+
+}
+
+.discountSlider {
+    background: #FFF;
+    box-shadow: 0px 0px 70px 0px rgba(21, 26, 50, 0.08);
+    padding: 60px 0px;
+    margin-top: 80px;  
+   
+}
+
+#deals .discountSlider:last-child{
+   margin-left: 30px;
+   margin-right: 20px;
+}
+#deals .discountSlider:first-child{
+    margin-left: 20px;
+    margin-right: 30px;
+ 
+ }
+ 
+#deals .discountCard {
+    background-color: #A6AAB7;
+    padding: 40px 0 40px 40px ;
+    margin: 0 10px;
+}
+
+#deals .discountCard h6 {
+    color: --black100;
+    font-family: Josefin Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+#deals .discountCard h2 {
+    color: #11161E;
+    text-align: left;
+    font-family: Josefin Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+}
+
+.discountSlider .discountCard p {
+    color: var(--paragraph-color, #444);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 30px 0;
+}
+
+.discountSlider .discountCard .price{
+    color: var(--text-color, #11161E);
+font-family: Josefin Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px;
+}
+
+.discountSlider .discountCard .price del{
+    color: var(--paragraph-color, #444);
+font-family: Josefin Sans;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: 30px;
+text-decoration-line: strikethrough;
+}
+
+.discountSlider .discountCard a{
+width: 170px;
+height: 56px;
+flex-shrink: 0;
+background: var(--3-d-primary-color, #151A32);
+color: var(--comon-colot, #FFF);
+text-align: center;
+font-family: Josefin Sans;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 54px;
+display: inline-block;
+position: relative;
+padding: 0 20px;
+}
+
+.discountSlider .discountCard a span{
+    fill: var(--comon-colot, #FFF);
+    position: absolute;
+    right: 18px;
+    top: 2px;
+}
+/* deals section ends */
